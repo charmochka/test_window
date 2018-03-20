@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Магазин окон</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="container main-head">
+
+        <div class="row justify-content-center align-items-center">
+            <div class="col">
+                <div class="logo-holder">
+                    <img src="img/logo.svg" alt="">
+                </div>
+            </div>
+
+            <div class="col">
+                <a class="head-link" href="#">Рассчитать стоимость</a>
+            </div>
+            <div class="col">
+                <p class="head-info">с 9 до 21 без выходных
+                    <br>
+                    <span>+7 495 534-65-33</span>
+                </p>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="row">
+                <div class="col">
+                    <ul class="main-nav-menu d-flex justify-content-center align-items-center">
+                        <li class="main-nav-menu__item">
+                            <a href="#">О компании</a>
+                        </li>
+                        <li class="main-nav-menu__item">
+                            <a href="#">Цены</a>
+                        </li>
+                        <li class="main-nav-menu__item">
+                            <a href="#">Услуги и продукты</a>
+                        </li>
+                        <li class="main-nav-menu__item">
+                            <a href="#">Акции</a>
+                        </li>
+                        <li class="main-nav-menu__item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container main-titel">
+        <div class="row">
+            <h1 class="main-titel__header">Цветные пластиковые окна</h1>
+        </div>
+        <div class="row">
+            <h2 class="main-titel__subtitel">Ламинируем профиль ПВХ для предания окнам цвета и фактуры дерева</h2>
+        </div>
+    </div>
+
+
+    <section class="main-content">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-2 aside-block">
+                    <p>Рекомендуем также</p>
+                    <ul>
+                        <li>
+                            <a class="aside-block__link" href="#">Edinburgh by REHAU</a>
+                        </li>
+                        <li>
+                            <a class="aside-block__link" href="#">Estet by REHAU</a>
+                        </li>
+                        <li>
+                            <a class="aside-block__link" href="#">REHAU DELIGHT-Design</a>
+                        </li>
+                        <li>
+                            <a class="aside-block__link" href="#">REHAU BRILLANT-Design</a>
+                        </li>
+                        <li>
+                            <a class="aside-block__link" href="#">REHAU Geneo</a>
+                        </li>
+                        <li>
+                            <a class="aside-block__link" href="#">Цветные окна</a>
+                        </li>
+                        <li>
+                            <a class="aside-block__link" href="#">Стеклопакеты</a>
+                        </li>
+                        <li>
+                            <a class="aside-block__link" href="#">Остекление балконов и лоджий</a>
+                        </li>
+                        <li>
+                            <a class="aside-block__link" href="#">Отделка и утепление балконов</a>
+                        </li>
+                        <li>
+                            <a class="aside-block__link" href="#">Балконные блоки</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-9 promo-block">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="promo-block__title">Создайте выразительный интерьер с нами REHAU</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <figure>
+
+                                <a class="popup-link" href="img/renau.png">
+                                    <img src="img/renau.png" alt="Ирландский дуб">
+                                </a>
+                                <figcaption>Ирландский дуб</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-8">
+                            <ul class="promo-block-list">
+                                <li class="promo-block-list__item">Точная визуализация натурального дерева.</li>
+                                <li class="promo-block-list__item">Яркие нестандартные цвета в тон или в дополнение интерьера.</li>
+                                <li class="promo-block-list__item">Разные фактуры для Ваших пластиковых окон.</li>
+
+                            </ul>
+                            <p class="promo-block__title--select-color">Подберите цвет для своих окон:</p>
+                            <div class="select-color" id="color-form">
+                                <input type="radio" name="color" id="color-1" value="col1">
+                                <label for="color-1" class="img-label color-1">
+                                </label>
+                                <input type="radio" name="color" id="color-2" value="col2">
+                                <label for="color-2" class="img-label color-2" title="">
+                                </label>
+                                <input type="radio" name="color" id="color-3" value="col3">
+                                <label for="color-3" class="img-label color-3">
+                                </label>
+                                <input type="radio" name="color" id="color-4" value="col4">
+                                <label for="color-4" class="img-label color-4">
+                                </label>
+                                <input type="radio" name="color" id="color-5" value="col5">
+                                <label for="color-5" class="img-label color-5">
+                                </label>
+                                <input type="radio" name="color" id="color-7" value="col7">
+                                <label for="color-7" class="img-label color-7">
+                                </label>
+                                <input type="radio" name="color" id="color-6" value="col2">
+                                <label for="color-6" class="img-label color-6" title="">
+                                </label>
+
+                            </div>
+                            <p class="promo-block-title-button">Больше 50 вариантов цветов и фактур спрашивайте у наших замерщиков</p>
+                            <button class="promo-block__button">Рассчитать со скидкой 70%</button>
+                            <br>
+                            <a class="promo-block__link" href="#">или отправить заявку и получить консультацию</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="features">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-3 hidden"></div>
+
+                <div class="col-9 features-block">
+
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="feature-block__title"> Зачем использовать ламинацию</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 ">
+                            <img src="img/icon1.svg" alt="">
+                        </div>
+                        <div class="col-11">
+                            <p>Чтобы придать внешнему виду окна оригинальную выразительность, специалисты применяют ламинацию
+                                – приём, при помощи которого можно декорировать своё жилье с учетом самых современных веяний
+                                дизайнерского искусства.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <img src="img/icon2.svg" alt="">
+                        </div>
+                        <div class="col-11">
+                            <p>При помощи ламинации оконного профиля можно, например, со всей точностью воспроизвести оттенки
+                                и структуру древесины: при этом обеспечивается полная визуализация натурального дерева, точно
+                                имитирующая расположение волокон. Помимо имитации деревянных поверхностей, применяют пленку
+                                самых разных цветов и фактур.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="feature-block__title"> Как окна становятся цветными?</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 m-auto features-icon">
+                            <img src="img/1.svg" alt="">
+                        </div>
+                        <div class="col-11">
+                            <p>Собственно, процесс ламинации профиля ПВХ состоит в процедуре нанесения на его поверхность декоративных
+                                высокопрочных плёнок с применением специального клея и ламинирующих установок.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 m-auto features-icon">
+                            <img src="img/2.svg" alt="">
+                        </div>
+                        <div class="col-11">
+                            <p>Плёнку прочно соединяют с профилем. При этом внешней стороне пленки свойственна высокая стойкость
+                                к повреждениям. В частности, цветное пластиковое окно, прошедшее процесс ламинации, стойко
+                                переносит температурные колебания в диапазоне от -80°С до +130°С, оно исключительно стойко
+                                к солнечному излучению. </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 m-auto features-icon">
+                            <img src="img/3.svg" alt="">
+                        </div>
+                        <div class="col-11">
+                            <p>Пластиковые окна, прошедшие процесс ламинации профилей, имеют срок службы гораздо больший, чем
+                                не ламинированные окна. В сравнении с окнами из массива дерева, они значительно дешевле.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="comments">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-3 hidden"></div>
+                <div class="col-9 comments-head">
+                    <h2 class="comments-head__titel"> Отзывы о цветных пластиковых окнах</h2>
+                    <a class="comments-head__link" href="#">посмотреть еще отзывы</a>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center">
+                <div class="col-3 hidden"></div>
+                <div class="col-9 comments-block">
+                    <p class="user-name">Алена</p>
+                    <p class="user-info">Договор № 09.10.33512.13</p>
+                    <time class="date" datetime="2013-12-13" title="13 декабря 2013 года">Дата размещения: 13 декабря 2013 года</time>
+
+                    <div class="input-rating" id="rating">
+                        <input type="checkbox" name="checkbox-option" id="checkbox-star-one" class="star" value="1" checked>
+                        <label for="checkbox-star-one">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </label>
+
+                        <input type="checkbox" name="checkbox-option" id="checkbox-star-two" class="star" value="2" checked>
+                        <label for="checkbox-star-two">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </label>
+
+                        <input type="checkbox" name="checkbox-option" id="checkbox-star-three" class="star" value="3" checked>
+                        <label for="checkbox-star-three">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </label>
+
+                        <input type="checkbox" name="checkbox-option" id="checkbox-star-four" class="star" value="4" checked>
+                        <label for="checkbox-star-four">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </label>
+
+                        <input type="checkbox" name="checkbox-option" id="checkbox-star-five" class="star" value="5">
+                        <label for="checkbox-star-five">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </label>
+                    </div>
+
+                    <p class="comment__text">Поставили нам окна во всей квартире.Все очень понравилось)))компания на 5+.Все очень любезные,гибкая
+                        система скидок!!!буду советовать всем!!!Сервис был на высоте,во-первых с поставкой получилось быстрее,во-вторых
+                        два раза приезжал замерщик Алексей,ему большое спасибо...</p>
+                    <a class="comment__link" href="#">прочитать полностью</a>
+                    <button class="comment__button">оставить отзыв</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

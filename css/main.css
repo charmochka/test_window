@@ -1,0 +1,541 @@
+/*Сброс дефолтных настроек*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #e1f0f8;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    color: #4b4b4b;
+    overflow-x: hidden;
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1140px;
+}
+
+.col-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+    max-width: 20%;
+}
+
+/*Шапка*/
+
+.main-head {
+    background: #fff;
+    padding-top: 10px;
+}
+
+.head-info {
+    text-align: right;
+}
+
+.head-info span {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+a.head-link {
+    color: #eb5825;
+    text-decoration: none;
+    font-size: 23px;
+    border-bottom: 1px solid #eb5825;
+    margin-left: 100px;
+}
+
+a.head-link:hover {
+    color: #7bc3d5;
+    border: hidden;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+/*Навигация*/
+
+.main-nav {
+    margin-top: 10px;
+}
+
+ul.main-nav-menu {
+    margin-bottom: auto;
+    padding: 0;
+}
+
+.main-nav-menu__item {
+    list-style: none;
+}
+
+.main-nav-menu__item a {
+    color: #767e86;
+    font-size: 24px;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-nav-menu__item a:hover {
+    color: #fff;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+li.main-nav-menu__item:not(:last-child) {
+    border-right: 1px #767e86 solid;
+}
+
+li.main-nav-menu__item {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+li.main-nav-menu__item:hover {
+    background-color: #7bc3d5;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+/*Заголовки*/
+
+.container.main-titel {
+    background: #e1f0f8;
+}
+
+.main-titel__header {
+    font-size: 45px;
+    padding-top: 15px;
+}
+
+.main-titel__subtitel {
+    padding-top: 5px;
+    padding-bottom: 30px;
+    font-size: 24px;
+}
+
+/*Боковое меню*/
+
+.aside-block {
+    min-height: 450px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.aside-block p {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.promo-block {
+    background: #fff;
+    border-radius: 5px;
+    min-height: 580px;
+}
+
+.aside-block__link {
+    color: #adadad;
+    border-bottom: 1px #adadad solid;
+    line-height: 2.4;
+    text-decoration: none;
+}
+
+.aside-block__link:hover,
+.aside-block__link:focus,
+.aside-block__link:active {
+    text-decoration: none;
+    color: #eb5825;
+    border-bottom: 1px #eb5825 solid;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+/*Блок с товаром*/
+
+.promo-block__title {
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    margin-bottom: 0;
+}
+
+ul.promo-block-list li::before {
+    position: relative;
+    font-family: "FontAwesome";
+    content: "\f111";
+    color: #eb5825;
+    font-size: 10px;
+    top: -2px;
+    padding-right: 10px;
+}
+
+.promo-block-list__item {
+    line-height: 2;
+}
+
+.promo-block__title--select-color {
+    font-size: 20px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+    color: #adadad;
+    padding: 10px 0;
+}
+
+/*Форма выбора цвета*/
+
+.select-color {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.img-label {
+    display: block;
+    position: relative;
+    height: 61px;
+    width: 63px;
+}
+
+.color-1 {
+    background-image: url(../img/color1.png);
+    background-repeat: no-repeat;
+}
+
+.color-2 {
+    background-image: url(../img/color2.png);
+    background-repeat: no-repeat;
+}
+
+.img-label.color-3 {
+    background-image: url(../img/color3.png);
+    background-repeat: no-repeat;
+}
+
+.img-label.color-4 {
+    background-image: url(../img/color4.png);
+    background-repeat: no-repeat;
+}
+
+.img-label.color-5 {
+    background-image: url(../img/color5.png);
+    background-repeat: no-repeat;
+}
+
+.img-label.color-7 {
+    background-image: url(../img/color7.png);
+    background-repeat: no-repeat;
+}
+
+.img-label.color-6 {
+    background-image: url(../img/color2.png);
+    background-repeat: no-repeat;
+}
+
+input:checked+.img-label::before {
+    position: relative;
+    z-index: 99999;
+    left: 20px;
+    top: 15px;
+    font-family: "FontAwesome";
+    content: "\f00c";
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/*Не стоит display none из соображений доступности*/
+
+input {
+    opacity: 0;
+}
+
+.promo-block-title-button {
+    margin-top: 20px;
+}
+
+.promo-block__button {
+    width: 250px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+button {
+    border-radius: 5px;
+    color: #fff;
+    background-color: #eb5825;
+    border: 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background: #7bc3d5;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.promo-block__link {
+    color: #adadad;
+    border-bottom: 1px #adadad solid;
+}
+
+.promo-block__link:hover,
+.promo-block__link:focus {
+    color: #eb5825;
+    border-bottom: 1px #eb5825 solid;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+/*Блок преимущества*/
+
+section.features {
+    margin-top: 25px;
+}
+
+.features-block {
+    min-height: 480px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.feature-block__title {
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+
+.features-icon {
+    text-align: center;
+}
+
+/*Блок комментарии*/
+
+.comments-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.comments-head__titel {
+    font-size: 24px;
+}
+
+.comments-head__link {
+    border-bottom: 1px #eb5825 solid;
+    color: #eb5825;
+}
+
+.comments-head__link:hover,
+.comments-head__link:focus {
+    text-decoration: none;
+    color: #eb5825;
+}
+
+.comments-block {
+    background-color: #fff;
+    border-radius: 5px;
+    min-height: 320px;
+    margin-bottom: 100px;
+}
+
+.user-name {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.user-info,
+.date {
+    color: #adadad;
+}
+
+.input-rating {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+input.star {
+    display: none;
+}
+
+.star+label {
+    display: inline-block;
+    width: 20px;
+    padding: 2px 0;
+    text-align: center;
+    font-family: "FontAwesome";
+    content: "\f006";
+    color: rgb(121, 121, 121);
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.star:checked+label {
+    display: inline-block;
+    color: #ffd900;
+}
+
+.comment__text {
+    padding-bottom: 10px;
+}
+
+.comment__link {
+    display: block;
+    width: 130px;
+    margin-left: 5px;
+    color: #eb5825;
+    border-bottom: 1px;
+    border-bottom-style: dashed;
+    border-color: #eb5825;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.comment__link::before {
+    font-family: "FontAwesome";
+    content: "\f01a";
+    color: #eb5825;
+    padding-right: 5px;
+}
+
+.comment__link:hover,
+.comment__link:focus {
+    text-decoration: none;
+    color: #eb5825;
+}
+
+.comment__button {
+    height: 40px;
+    width: 160px;
+}
